@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background: linear-gradient(100deg, #001214, #001f29);
+    color: white;
+    transition: 0.3s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+
+.work-area {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 40vw;
+    height: 20vw;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.work-area_todo-text {
+    font-size: 4em;
+}
+
+.work-area_form {
+    display: flex;
+    justify-content: center;
+  }
+
+.work-area_todo-input {
+    height: 3vw;
+    width: 30vw;
+    border: none;
+    outline: none;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    padding: 0 0 0 15px;
+    font-size: 1.5em;
+    background-color: #01394c;
+    color: #fff;
+}
+
+.work-area_todo-input:hover {
+background-color: #013141
+}
+
+.work-area_todo-button {
+    height: 3vw;
+    width: 7vw;
+    border: none;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    font-size: 1.5em;
+    background-color: #002837;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+
+.tasks-area {
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin-top: 5rem;
+}
+
+.tasks-area_task {
+    width: 30vw;
+    list-style: none;
+}
+
+.taska {
+    margin: 0.5rem;
+    display: flex;
+    font-size: 19px;
+    background-color: #01394c;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.25em 0.5em;
+}
+
+.taska li {
+    padding: 7px;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    font-size: 20px;
+    flex: 1;
+    border-radius: 30px;
+    overflow-wrap: anywhere;
+}
+
+.tasks-area_complete-button,
+.tasks-area_delete-button {
+    font-size: 17px;
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    border-radius: 80%;
+    margin: 0 5px;
+    background-color: #002837;
+    border: none;
+    padding: 1px;
+    color: white;
+
+}
+
+button:hover {
+    background-color: #001f29;
+}
+
+.taska:hover {
+    background-color: #013141
+}
