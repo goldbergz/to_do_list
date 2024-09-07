@@ -32,15 +32,17 @@ function addToDo () {
     }
 }
 
- tasksArea.onclick = function doneAndDelete (event) {
+tasksArea.onclick = function doneAndDelete (event) {
     let target = event.target
 
-    if (target.classList.contains('tasks-area_done-button')) {
-        let taskaText = document.querySelector('li')
-        taskaText.classList.toggle('strikethrough')
+    let doneBtn = target.closest('.tasks-area_done-button');
+    if (doneBtn) {
+        let taskaText = doneBtn.parentElement.querySelector('li');
+        taskaText.classList.toggle('strikethrough');
     }
 
-    if (target.classList.contains('tasks-area_delete-button')) {
-        target.parentElement.remove()
+    let deleteBtn = target.closest('.tasks-area_delete-button');
+    if (deleteBtn) {
+        deleteBtn.parentElement.remove();
     }
 }
